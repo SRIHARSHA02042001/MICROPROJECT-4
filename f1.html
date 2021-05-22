@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		.container {
+			border:1px solid black;
+			margin-left:400px;
+			margin-right:400px;
+			margin-bottom:100px;
+			background-color: #eee8aa;
+		}
+		input[type=text]:hover{
+		background-color: #f0f8ff;
+		}
+		input[type=date]:hover{
+		background-color: #f0f8ff;
+		}
+		input[type=textarea]:hover{
+		background-color: #f0f8ff;
+		}
+		input[type=email]:hover{
+		background-color: #f0f8ff;
+		}
+		input[type=number]:hover{
+		background-color: #f0f8ff;
+		}
+		input[type=submit]:hover {
+  			background-color: #45a049;
+		}
+		input[type=submit] {
+  			background-color: #4CAF50;
+ 	 		color: white;
+  			padding: 12px 20px;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+		}
+	</style>
+</head>
+<body style="background-color:#f08080">
+<center>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Government_of_Telangana_Logo.png" height="200px" width="200pxx">
+	<h1 style="color:#800000">Welecome To Epass Registration System</h1><br>
+	<div class="container">
+	<form name="f" method="post" action="/submit" enctype = "multipart/form-data">
+		<label>First Name</label><br>
+		<input  type="text" name="n1" placeholder="First Name" required><br><br>
+		<label>Last Name</label><br>
+		<input  type="text" name="l1" placeholder="Last Name" required><br><br>
+		<label>Email</label><br>
+		<input  type="email" name="email" placeholder="Email" required><br><br>
+		<label>Source State</label><br>
+		<input  type="text" name="sst" placeholder="Source state" required><br><br>
+		<label>Source District</label><br>
+		<input  type="text" name="sdt" placeholder="Source district" required><br><br>
+		<label>Destination State</label><br>
+		<input  type="text" name="dst" placeholder="Destination state" required><br><br>
+		<label>Destination District</label><br>
+		<input  type="text" name="ddt" placeholder="Destination district" required><br><br>
+		<label>Phone Number</label><br>
+		<input  type="number" name="phn" placeholder="Phone number" required><br><br>
+		<label>Aadhar Number</label><br>
+		<input  type="text" name="idp" placeholder="Enter 12 digit Aadhar number" required><br><br>
+		<label>Date</label><br>
+		<input  type="date" name="tdt" placeholder="Date of travel" required><br><br>
+		<label>Reason</label><br>
+		<textarea name="msg" placeholder="Your Reason" required></textarea><br><br>
+		<label>Declaration:</label><br>
+		<textarea name="msg1" placeholder="Give declaration" required></textarea><br><br>
+		<input type ="submit" value="Submit">
+	</form>
+	</div>
+</center>
+</body>
+</html>
